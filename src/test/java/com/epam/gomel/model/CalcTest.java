@@ -56,6 +56,12 @@ public class CalcTest {
         Assert.assertEquals(actualMul, expectedMul, "Method mul doesn't work or your test data is invalid.");
     }
 
+    @Test(description = "Red test")
+    public void testThatAlwaysFails() {
+        int actualSum = calc.sum(10, 10, 10);
+        Assert.assertEquals(actualSum, 40, "Method sum doesn't work or your test data is invalid.");
+    }
+
     @AfterClass
     public void tearDown() {
         calc = null;
